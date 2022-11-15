@@ -1,0 +1,54 @@
+@import '_picture';
+@import '_contact';
+@import '_education';
+@import '_skill';
+@import '_language';
+@import '_header';
+@import '_experience';
+@import '_interest';
+
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.leftSide {
+    float: left;
+    width: 30%;
+    height: 200vh;
+    background-color:  #e0e0d1;
+}
+
+.mainContainer {
+    float: right;
+    width: 70%;
+    height: 200vh;
+}
+
+@media only screen and (max-width: 900px) {
+    .leftSide {
+        float: left;
+        width: 40%;
+        height: 200vh;
+        background-color:  #e0e0d1;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .leftSide {
+        float: left;
+        // width: 40%;
+        height: 235vh;
+        background-color:  #e0e0d1;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .mainContainer {
+        float: right;
+        width: 60%;
+        height: 200vh;
+    }
+}

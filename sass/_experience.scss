@@ -1,0 +1,83 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7.5rem;
+    margin-left: 5.2rem;
+}
+
+.experience > h1::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid black;
+    width: 28rem;
+    margin-left: 17rem;
+    transform: translate(20%, -6px);
+}
+
+@media only screen and (max-width: 1350px) {
+    .experience > h1::after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .experience {
+        font-size: 1rem;
+        margin-left: .6rem;
+    }
+}
+
+.experience > h1 {
+    font-size: $font1;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .experience > h1 {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+}
+
+.exp1, .exp2, .exp3 {
+    line-height: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.exp1 > ul > li {
+    @include exp1exp2exp3;
+}
+.exp2 > ul > li {
+    @include exp1exp2exp3;
+}
+.exp3 > ul > li {
+    @include exp1exp2exp3;
+}
+
+.exp1 > h4 {
+    @include exp1exp2exp3H4;
+}
+.exp2 > h4 {
+    @include exp1exp2exp3H4;
+}
+.exp3 > h4 {
+    @include exp1exp2exp3H4;
+}
+
+@media only screen and (max-width: 900px) {
+    .exp1, .exp2, .exp3 {
+        font-size: .8rem;
+        margin-left: 0;
+        line-height: 1rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    ul > li {
+        font-size: .8rem;
+        margin-left: 0;
+        line-height: 1rem;
+    }
+}
+

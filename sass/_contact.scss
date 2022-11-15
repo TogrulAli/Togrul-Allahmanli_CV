@@ -1,0 +1,80 @@
+@import '_variable';
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.contact > h1 {
+    font-size: $font1;
+    @include marginLeft;
+    @include marginBottom;
+    letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact > h1 {
+        font-size: 1rem;
+        margin-left: 1.2rem;
+    }
+}
+
+.contact > h1::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid black;
+    width: 8rem;
+    margin-left: 5.9rem;
+    transform: translate(20%, -6px);
+}
+
+@media only screen and (max-width: 1350px) {
+    .contact > h1::after {
+        display: none;
+    }
+}
+
+.contact > h4 {
+    font-size: $font4;
+    @include marginLeft;
+    @include marginBottomh4;
+    width: 20%;
+    background-color: #80bfff;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact > h4 {
+        font-size: 1rem;
+        margin-left: 1.2rem;
+        width: 50%;
+    }
+}
+
+.contact > p {
+    font-size: $fontp;
+    @include marginLeft;
+    @include marginBottom;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact > p {
+        font-size: .5rem;
+        margin-left: 1.2rem;
+    }
+}
+
+address > a {
+    font-size: $fontp;
+    @include marginLeft;
+    color: black;
+    text-decoration: none;
+    @include marginBottom;
+}
+
+@media only screen and (max-width: 900px) {
+    address > a {
+        font-size: .5rem;
+        margin-left: 1.2rem;
+    }
+}

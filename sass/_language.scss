@@ -1,0 +1,70 @@
+.lang {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .lang {
+        margin-top: 0;
+    }
+}
+
+.lang > h1 {
+    font-size: $font1;
+    @include marginLeft;
+    @include marginBottom;
+    letter-spacing: 0.2rem;
+    margin-bottom: -.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .lang > h1 {
+        font-size: 1rem;
+        margin-left: 1.2rem;
+    }
+}
+
+.lang > h1::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid black;
+    width: 8rem;
+    margin-left: 14rem;
+    transform: translate(20%, -39px);
+}
+
+@media only screen and (max-width: 1350px) {
+    .lang > h1::after {
+        display: none;
+    }
+}
+
+.lang > p {
+    @include marginLeft;
+    $fontp: 1rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#span2 {
+    padding-left: 35px;
+}
+
+#span3 {
+    padding-left: 45px;
+}
+
+@media only screen and (max-width: 900px) {
+    .lang > #span2, #span3 {
+        padding-left: 25px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .lang > p {
+        font-size: .7rem;
+        margin-left: 1.2rem;
+        margin-bottom: 5px;
+    }
+}

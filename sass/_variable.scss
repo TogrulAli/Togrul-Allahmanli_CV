@@ -1,0 +1,26 @@
+$font1: 2rem;
+$font4: 1.3rem;
+$fontp: 1rem;
+$font5: 1rem;
+
+@mixin marginLeft {
+    margin-left: 6rem;
+}
+
+@mixin marginBottom {
+    margin-bottom: 10px;
+}
+
+@mixin marginBottomh4 {
+    margin-bottom: 5px;
+}
+
+@mixin exp1exp2exp3 {
+    padding: .3rem 0;
+}
+
+@mixin exp1exp2exp3H4 {
+    color: #8c8c8c;
+    margin: .3rem 0;
+}
+

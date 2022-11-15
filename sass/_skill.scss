@@ -1,0 +1,61 @@
+.skill {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .skill {
+        margin-top: 0;
+    }
+}
+
+.skill > h1 {
+    font-size: $font1;
+    @include marginLeft;
+    @include marginBottom;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.1rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .skill > h1 {
+        font-size: 1rem;
+        margin-left: 1.2rem;
+    }
+}
+
+.skill > h1::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid black;
+    width: 8rem;
+    margin-left: 8.1rem;
+    transform: translate(20%, -6px);
+}
+
+@media only screen and (max-width: 1350px) {
+    .skill > h1::after {
+        display: none;
+    }
+}
+
+.skill > ul {
+    margin-left: 4.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .skill > ul {
+        margin-left: -.1rem;
+    }
+}
+
+.skill > ul > li {
+    margin-bottom: 0.7rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .skill > ul > li {
+        margin-bottom: 0.1rem;
+    }
+}

@@ -1,0 +1,80 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .education {
+        margin-top: .5rem;
+    }
+}
+
+.education > h1 {
+    font-size: $font1;
+    @include marginLeft;
+    @include marginBottom;
+    letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .education > h1 {
+        font-size: 1rem;
+        margin-left: 1.2rem;
+        margin-bottom: 5px;
+    }
+}
+
+.education > h1::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid black;
+    width: 8rem;
+    margin-left: 3.5rem;
+    transform: translate(20%, -6px);
+}
+
+@media only screen and (max-width: 1350px) {
+    .education > h1::after {
+        display: none;
+    }
+}
+
+.education > h5 {
+    @include marginLeft;
+    font-size: $font5;
+    line-height: 1.2rem;
+}
+
+#secondthirdforthh5 {
+    margin-top: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    #secondthirdforthh5 {
+        margin-bottom: .5rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .education > h5 {
+        font-size: .7rem;
+        margin-left: 1.2rem;
+        margin-bottom: 5px;
+    }
+}
+
+.education > p {
+    font-size: $fontp;
+    @include marginLeft;
+    @include marginBottom;
+}
+
+@media only screen and (max-width: 900px) {
+    .education > p {
+        font-size: .7rem;
+        margin-left: 1.2rem;
+        margin-bottom: 5px;
+    }
+}
